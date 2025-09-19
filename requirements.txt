@@ -1,0 +1,22 @@
+gradio
+transformers
+kokoro
+soundfile
+requests
+numpy
+pandas
+librosa
+langchain
+langchain_openai
+langchain_ollama
+misaki
+misaki[zh]
+misaki[ja]
+openai-whisper
+torch
+webrtcvad
+pyaudio
+sounddevice
+sentencepiece
+#sudo apt update && sudo apt install ffmpeg
+#sudo apt-get install portaudio19-dev
