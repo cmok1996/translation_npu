@@ -23,6 +23,7 @@ curl https://raw.githubusercontent.com/openvinotoolkit/model_server/refs/heads/r
 python -m venv ovms_venv
 ovms_venv\Scripts\activate
 pip3 install -r https://raw.githubusercontent.com/openvinotoolkit/model_server/refs/heads/releases/2025/3/demos/common/export_models/requirements.txt
+pip install optimum-intel==1.24.0 optimum==1.26.1 --no-cache
 mkdir models
 ```
 
@@ -33,7 +34,7 @@ python export_model.py text_generation --source_model aisingapore/Llama-SEA-LION
 
 ### Export whisper
 ```bash
-optimum-cli export openvino --trust-remote-code --model openai/whisper-medium models/openai/whisper-medium --task automatic-speech-recognition --weight-format int4 
+optimum-cli export openvino --trust-remote-code --model openai/whisper-medium models/openai/whisper-medium
 ```
 
 ### Install project requirements

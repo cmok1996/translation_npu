@@ -29,7 +29,7 @@ import queue
 # whisper_pipeline = pipeline("automatic-speech-recognition", model="openai/whisper-small")
 whisper_pipeline = whisper.load_model("small")
 DEVICE = "NPU"
-MODEL_DIR = "C:/Users/aicoe/llm_openvino2025.2/models"
+MODEL_DIR = "./models"
 STT_MODEL = "openai/whisper-medium"
 WHISPER_RUNTIME = 'openvino_genai' #'oga' #'dpais'
 if DEVICE == "NPU":
