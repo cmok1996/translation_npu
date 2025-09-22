@@ -1,12 +1,13 @@
 gradio==5.46.1
-transformers==4.56.2
+openai==1.108.1
+transformers
 kokoro==0.9.4
 soundfile==0.13.1
 requests==2.32.5
 numpy==2.2.6
 pandas==2.3.2
-librosa=0.11.0
-misaki==0.9.4
+librosa==0.11.0
+misaki
 misaki[zh]
 misaki[ja]
 openai-whisper==20250625

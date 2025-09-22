@@ -1,9 +1,13 @@
 
 # Transcription Translation App
 
-App that does transcription and Translation using NPU with openvino runtmie
+App that does transcription and Translation using NPU with openvino runtime
 
 ## Installation
+
+### Prerequisites
+python>=3.10
+Visual Studio Build Microsoft C++ Build Tools - https://visualstudio.microsoft.com/visual-cpp-build-tools/
 
 ### Clone repo
 ```bash
@@ -44,11 +48,16 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+### Install ffmpeg
+```bash
+#run on powershell
+winget install ffmpeg
+```
 ## App launch
 
 ```bash
-# run on powershell
-translation_npu.ps1
+# run on powershell; initial run takes a longer time as it downloads whisper-small from whisper pipeline and kokoro model from huggingface
+translation_demo.ps1
 ```
 
 
